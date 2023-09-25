@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: skyblue;
+        }
+        .container{
+            width: 100%;
+        }
+        #grad{
+            margin: 15% 45%;
+            height: 200px;
+            width: 200px;
+            border: 1px solid red;
+            border-radius: 50%;
+            /* background-color: orangered;*/
+            background-image: linear-gradient(to top, red , yellow);
+            box-shadow: 10px 10px 10px rgb(9, 9, 9);
+        }
+        @keyframes rotation {
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .container{
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: rotate(360deg);
+            animation-name: rotation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div id="circle"></div> -->
+        <div id="grad"></div>
+    </div>
+
+</body>
+</html>

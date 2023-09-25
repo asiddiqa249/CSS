@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            background-color: peru;
+        }
+        /*.bar{
+            width: 70%;
+            margin-top: 1.5%;
+            margin-left: 3%;
+            border: 1px solid black;
+            padding: 1%;
+            border-radius: 5px;
+        }
+        .range{
+            width: 95%;
+           /* margin-top: 1%;
+            margin-left: 2%;
+            border: 1px solid gray;
+            border-radius: 7px;
+            padding: 0.5%;
+        }*/
+        .btns{
+            margin: 1% 0 0 3%;
+            text-align: center;
+        }
+        button{
+            background-color: gray;
+            border-radius: 5px;
+            width: 150px;
+            height: 30px;
+            margin: 1%;
+        }
+        #r1:hover + .a{
+            width: 20px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: beige;
+            /*animation-name: sqr;
+            animation-duration: 3s;
+            animation-direction: normal;*/
+            
+            animation-name: Range1;
+            animation-duration:4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes  Range1{
+            from{
+                background-color: aqua;
+                width: 0%;
+            }
+            to{
+                background-color:palevioletred;
+                width: 25%;
+            }
+        }
+        @keyframes Range2{
+            from{
+                background-color: rgb(169, 147, 154);
+                width: 0%;
+            }
+            to{
+                background-color: rgb(233, 13, 123);
+                width: 50%;
+            }
+        }
+        #r2:hover + .b{
+            width: 20px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            animation-name: Range2;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes Range3{
+            from{
+                background-color: peachpuff;
+                width: 0%;
+            }
+            to{
+                background-color: red;
+                width: 75%;
+            }
+        }
+        #r3:hover + .c{
+            width: 20px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            animation-name: Range3;
+            animation-duration:  3s;
+            animation-timing-function:  ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes Range4{
+            from{
+                background-color: skyblue;
+                width: 0%;
+            }
+            to{
+                background-color: blue;
+                width: 100%;
+            }
+        }
+        #r4:hover + .d{
+            width: 20px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            animation-name: Range4;
+            animation-duration:  3s;
+            animation-timing-function:  ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="bar">
+        <div class="range"></div>
+    </div> -->
+    <h1>Task-1</h1>
+    <div class="btns">
+        <button id="r1">Range 1</button>
+        <div class="a"></div>
+        <button id="r2">Range 2</button>
+        <div class="b"></div>
+        <button id="r3">Range 3</button>
+        <div class="c"></div>
+        <button id="r4">Range 4</button>
+        <div class="d"></div>
+    </div>
+    <!--Task-1 End-->
+    <h1>Task-2</h1>
+    
+</body>
+</html>

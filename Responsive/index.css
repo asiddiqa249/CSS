@@ -56,7 +56,8 @@
  /* @media screen and (max-width: 900px) {
     .img {
             position: absolute;
-
+            top: 50%;
+            left: 40%;
             color: white;
             background-color: rgba(198, 21, 21, 0.8);
             font-size: 3vh;
@@ -77,8 +78,8 @@
      position: absolute;
      color: white;
      font-size: 50px;
-     top: 50%;
-     left: 45%;
+     top: 55vh;
+     left: 40%;
      font-weight: 200;
      display: inline;
      /* background-color: rgb(13, 13, 13, 0.7); */
@@ -88,8 +89,20 @@
  }
 
  .Text b {
-     background-color: rgb(13, 13, 13, 0.7);
+     background-color: rgb(13, 13, 13, 0.8);
      /* padding: 1%; */
+ }
+ @media (min-width:580px) {
+    .Text{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+    }
+    .Text b{
+        font-size: bolder;
+        padding: 1vh;
+    }
+    
  }
 
  .pr {
