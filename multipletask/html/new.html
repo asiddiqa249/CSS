@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .main{
+        width: 100%;
+      }
+      h1{
+        text-align: center;
+        background-color: gray;
+        color: brown;
+        margin-top: 0.5%;
+      }
+      #carouselExample {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+      }
+      img {
+        width: 100vw;
+        height: 100vh;
+      }
+      .card img{
+        width: 100%;
+        height:100%;
+      }
+      .card2 img{
+        width: 100%;
+        height:100%;
+      }
+      .card{
+        border: 1px solid gainsboro;
+      }
+      .card2{
+        position: absolute;
+        top:765px;
+        left:400px;
+        border: 1px solid gainsboro;
+      }
+      .contact{
+        text-align: center;
+      }
+      iframe{
+        width: 100%;
+        height: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class:"main">
+    <header>
+      <h1>
+        Restaurant
+      </h1>
+    </header>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNrsOAGhqJ2qSBGATu0pTFJwScaFEJQDto4g&usqp=CAU" class="d-block w-100" alt="..."/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWS3pSTjl5OvkYyOECjOlGWrfcTkd7hT7l3g&usqp=CAU" class="d-block w-100" alt="..."/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5wV4cxpchAfS4J0rYIzGiDd2H1SPCgSoraw&usqp=CAU" class="d-block w-100" alt="..."/>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1>Menu</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGRfrJOoh2C9BZTLTe8cIxL1nSErLP_mJfWw&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Non-veg</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Chicken Biryani</li>
+              <li class="list-group-item">Mutton Biryani</li>
+              <li class="list-group-item">Mix Biryani</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9p19cp_WJ1b6nhNdA_dl6UB_-sfluwsWVQ&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Veg</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Paneer Palao</li>
+              <li class="list-group-item">Veg Biryani</li>
+              <li class="list-group-item">Veg palao</li>
+            </ul>
+          </div>
+       </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRt02vbYzbRh_EYpqMf9YS-SweZ3zAgQZG1Q&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Starters</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Veg Manchuriyan</li>
+              <li class="list-group-item">Chicken Noodles</li>
+              <li class="list-group-item">Pasta</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+    <h1>CONTACT & LOCATION</h1>
+    <p><b><address>Road N0-1, JNTUH, Kukatpally, Hyderabad, 500085.</address></b></p>
+    <p><b>CONTACT :</b>9949816332, 7032449793</p>
+    <p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.1823261178947!2d78.38740627492169!3d17.4988077995862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91a8dcb76371%3A0x779cd37af96408a0!2sMehfil%20Restaurant!5e0!3m2!1sen!2sin!4v1692726331769!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    </div>
+  </body>
+</html>
